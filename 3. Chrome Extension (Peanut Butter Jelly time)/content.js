@@ -70,9 +70,13 @@ function bananaPartyFrame() {
 }
 
 
-(async function () {
-  const bananaAudio = new Audio('https://www.soundboard.com/mediafiles/nt/NTIzODMwNDY1MjM4NzA_8pl_2bioP2Vxw.mp3')
-  await bananaAudio.play()
+window.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const bananaAudio = new Audio('https://www.soundboard.com/mediafiles/nt/NTIzODMwNDY1MjM4NzA_8pl_2bioP2Vxw.mp3')
+    await bananaAudio.play()
+  } catch (e) {
+    console.error(e, 'Cant play audio :(')
+  }
 
   const interval = 2000
 
@@ -84,7 +88,7 @@ function bananaPartyFrame() {
   }
 
   setInterval(bananaParty, interval)
-})()
+}, { once: true })
 
 
 

@@ -1,10 +1,10 @@
 {
   "name": "Peanut Butter Jelly time",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://vk.com/armbicey"],
+      "matches": ["https://vk.com/armbicey", "https://vk.com/id133970996"],
       "js": ["content.js"]
     }
   ],
