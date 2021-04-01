@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://vk.com/armbicey", "https://vk.com/id133970996"],
+      "matches": ["https://vk.com/armbicey"],
       "js": ["content.js"]
     }
   ],
